@@ -5,8 +5,8 @@ exports.initMongoDb = () =>
         try {
             mongoose.set('strictQuery', true);
             mongoose
-                .connect('mongodb://localhost:27017', {
-                    dbName: 'food-recycling-db',
+                .connect('mongodb+srv://alilahbib_dev:ali20022002@cluster0.gwcyu.mongodb.net/PlantDesease?retryWrites=true&w=majority&appName=Cluster0', {
+                  
                     autoCreate: true,
                     autoIndex: true,
                 })
