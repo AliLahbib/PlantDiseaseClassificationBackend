@@ -30,6 +30,11 @@ app.use(fileUpload({
     useTempFiles : true,
     tempFileDir : '/tmp/'
 }));
+app.get('/test',
+    async (req,res)=>{
+        console.log("testtt")
+    }
+)
 
 app.post('/post-data',async (req, res)=> { 
     // Check if files were uploaded
